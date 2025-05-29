@@ -50,14 +50,16 @@
             .then(response => response.json())
             .then(data => {
                 alert('Local salvo com sucesso!');
-                console.log(data);
+                window.location.href = '/reclamacoes/criar';
+            });
+
             })
             .catch(error => {
                 alert('Erro ao salvar o local.');
                 console.error(error);
             });
 
-        });
+        
     </script>
 </body>
 </html>
